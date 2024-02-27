@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h3 id="zad1"></h3>
+<p id="Damian"></p>
+<p id="data"></p>
+<p id="data1"></p>
+<p id="data2"></p>
+<script>
+    function zadanie1(imie, nazwisko, klasa, grupa) {
+        return imie + " " + nazwisko + " " + klasa + " " + grupa;
+    }
+        document.getElementById("zad1").innerHTML = zadanie1 ("Damian", "Górka", "2p", "2");
+        document.getElementById("zad1").style.color = "red";
+        document.getElementById("zad1").style.textAlign = "center";
+     // zad 2
+    function zadanie2(A, B) {
+        return A * B;
+    }
+    document.getElementById("Damian").innerHTML = zadanie2(26, 6);
+    // zad 3
+    function zad3(terazniejszadata) {
+        return terazniejszadata;
+    }
+    document.getElementById("data").innerHTML = zad3;
+    let date = new Date();
+    document.getElementById("data").innerHTML = date;
+</script>
+</body>
+</html>
